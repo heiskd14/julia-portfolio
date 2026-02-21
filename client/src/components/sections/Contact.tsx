@@ -92,7 +92,7 @@ export function Contact() {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="KingDavid" className="bg-background/50 h-12" {...field} />
+                        <Input placeholder="Julia" className="bg-background/50 h-12" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>

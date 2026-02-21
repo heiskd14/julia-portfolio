@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profilePic from "@assets/MATRIC-320_1767402764655.jpg";
+import profilePic from "@assets/1768291252320_1771714105877.jpg";
 
 export function About() {
   return (
