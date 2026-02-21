@@ -33,7 +33,7 @@ export async function registerRoutes(
         try {
           const emailResponse = await resend.emails.send({
             from: "Portfolio <onboarding@resend.dev>",
-            to: "okeyodekingdavid@gmail.com",
+            to: "juliaokeyode504@gmail.com",
             subject: `New Message from ${input.name}`,
             text: `Name: ${input.name}\nEmail: ${input.email}\n\nMessage:\n${input.message}`,
           });

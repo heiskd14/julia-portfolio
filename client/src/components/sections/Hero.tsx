@@ -28,8 +28,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-tight mb-6"
           >
-            Building reliable websites <br />
-            and <span className="text-gradient">applications</span>.
+            Julia Okeyode <br />
+            <span className="text-gradient">Creative Portfolio</span>.
           </motion.h1>
 
           <motion.p
@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-10 leading-relaxed"
           >
-            I develop frontend-driven solutions with structured logic, reusable components, and performance in mind, while also implementing basic backend APIs and application workflows. My work is project-based, practical, and focused on solving real problems with programming.
+            Nursing Student | Certified RN | Photographer | Content Creator | Dancer
           </motion.p>
 
           <motion.div

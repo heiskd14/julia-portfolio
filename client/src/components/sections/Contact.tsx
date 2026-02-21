@@ -61,7 +61,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="text-muted-foreground">okeyodekingdavid@gmail.com</p>
+                  <p className="text-muted-foreground">juliaokeyode504@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -70,7 +70,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-muted-foreground">Abuja, Nigeria</p>
+                  <p className="text-muted-foreground">Nigeria</p>
                 </div>
               </div>
             </div>

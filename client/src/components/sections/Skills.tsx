@@ -8,9 +8,8 @@ export function Skills() {
   const { data: skills, isLoading } = useSkills();
 
   const categories = [
-    { id: "Frontend", label: "Frontend Development" },
-    { id: "Backend", label: "Backend Architecture" },
-    { id: "Tools", label: "Tools & DevOps" },
+    { id: "Creative", label: "Creative & Arts" },
+    { id: "Tools", label: "Software & Tools" },
   ];
 
   const container = {
