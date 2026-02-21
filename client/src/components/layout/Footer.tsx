@@ -8,7 +8,7 @@ export function Footer() {
         
         <div className="flex justify-center gap-6 mb-8 flex-wrap">
           <SocialLink href="https://www.linkedin.com/in/juliaokeyode" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
-          <SocialLink href="https://www.instagram.com/n.i.f.e/" icon={<Instagram className="w-5 h-5" />} label="Instagram" />
+          <SocialLink href="https://www.instagram.com/_n.i.f.e/" icon={<Instagram className="w-5 h-5" />} label="Instagram" />
           <SocialLink href="https://wa.me/2347069022091" icon={<MessageCircle className="w-5 h-5" />} label="WhatsApp" />
           <SocialLink href="mailto:juliaokeyode504@gmail.com" icon={<Mail className="w-5 h-5" />} label="Email" />
         </div>
