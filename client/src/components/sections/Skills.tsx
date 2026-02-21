@@ -78,13 +78,20 @@ export function Skills() {
                 className="flex flex-wrap gap-2"
               >
                 {groupedSkills[category.id]?.map((skill) => (
-                  <motion.div key={skill.id} variants={item}>
-                    <Badge 
-                      variant="secondary" 
-                      className="px-3 py-1.5 text-sm bg-secondary/50 hover:bg-primary/20 hover:text-primary transition-colors border-transparent"
-                    >
-                      {skill.name}
-                    </Badge>
+                  <motion.div key={skill.id} variants={item} className="w-full">
+                    <div className="flex justify-between mb-1">
+                      <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                      <span className="text-xs text-muted-foreground">{skill.proficiency}%</span>
+                    </div>
+                    <div className="w-full bg-secondary/30 rounded-full h-2 mb-4">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.proficiency}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        className="bg-primary h-2 rounded-full"
+                      />
+                    </div>
                   </motion.div>
                 ))}
               </motion.div>

@@ -18,7 +18,7 @@ export const skills = pgTable("skills", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   category: text("category").notNull(), // 'Frontend', 'Backend', 'Tools'
-  proficiency: serial("proficiency"), // 1-100
+  proficiency: integer("proficiency").notNull().default(0), // 1-100
 });
 
 export const messages = pgTable("messages", {
