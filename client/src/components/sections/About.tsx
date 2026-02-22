@@ -32,9 +32,19 @@ export function About() {
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
                 Hi, I’m Julia Okeyode — a dynamic nursing student, certified RN, photographer, content creator, and dancer. 
-                I create content that inspires, engages, and tells a story. 
-                This portfolio showcases my photography, choreography, social media campaigns, and creative projects.
+                I believe in holistic care and creative storytelling. 
+                This portfolio showcases my professional journey in healthcare and my passion for the arts.
               </p>
+            </div>
+            <div className="pt-4">
+              <a 
+                href="/cv.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+              >
+                View My CV
+              </a>
             </div>
           </motion.div>
         </div>
