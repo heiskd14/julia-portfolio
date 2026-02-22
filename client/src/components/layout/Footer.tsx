@@ -11,6 +11,7 @@ export function Footer() {
           <SocialLink href="https://www.instagram.com/_n.i.f.e/" icon={<Instagram className="w-5 h-5" />} label="Instagram" />
           <SocialLink href="https://wa.me/2347069022091" icon={<MessageCircle className="w-5 h-5" />} label="WhatsApp" />
           <SocialLink href="mailto:juliaokeyode504@gmail.com" icon={<Mail className="w-5 h-5" />} label="Email" />
+          <SocialLink href="https://www.tiktok.com/_n.i.f.e _ || RN/" icon={Tiktok className="w-5 h-5" />} label="Tiktok" />
         </div>
 
         <p className="text-muted-foreground text-sm">
