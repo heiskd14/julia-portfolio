@@ -29,6 +29,9 @@ export async function registerRoutes(
       const input = api.contact.submit.input.parse(req.body);
       const message = await storage.createMessage(input);
 
+      const resendApiKey = process.env.julia || process.env.RESEND_API_KEY;
+      const resend = resendApiKey ? new Resend(resendApiKey) : null;
+
       if (resend) {
         try {
           const emailResponse = await resend.emails.send({
@@ -42,7 +45,7 @@ export async function registerRoutes(
           console.error("Failed to send email via Resend:", emailErr);
         }
       } else {
-        console.warn("Resend client not initialized. Check RESEND_API_KEY.");
+        console.warn("Resend client not initialized. Check RESEND_API_KEY or julia secret.");
       }
 
       res.json(message);
