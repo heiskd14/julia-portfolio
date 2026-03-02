@@ -53,9 +53,14 @@ export function Hero() {
               </Button>
             </Link>
             
-            <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base border-2 hover:bg-secondary/50">
-              Download CV <Download className="ml-2 w-4 h-4" />
-            </Button>
+            <a 
+              href="/cv.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full px-8 h-12 text-base border-2 hover:bg-secondary/50 transition-colors"
+            >
+              View CV <Download className="ml-2 w-4 h-4" />
+            </a>
           </motion.div>
         </div>
       </div>
