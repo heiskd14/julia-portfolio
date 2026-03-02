@@ -34,13 +34,24 @@ export async function registerRoutes(
 
       if (resend) {
         try {
+          console.log("Attempting to send email to: juliaokeyode504@gmail.com");
           const emailResponse = await resend.emails.send({
             from: "Portfolio <onboarding@resend.dev>",
             to: "juliaokeyode504@gmail.com",
             subject: `New Message from ${input.name}`,
-            text: `Name: ${input.name}\nEmail: ${input.email}\n\nMessage:\n${input.message}`,
+            reply_to: input.email,
+            html: `
+              <div style="font-family: sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+                <h2 style="color: #333;">New Portfolio Message</h2>
+                <p><strong>Name:</strong> ${input.name}</p>
+                <p><strong>Email:</strong> ${input.email}</p>
+                <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                <p><strong>Message:</strong></p>
+                <p style="white-space: pre-wrap; line-height: 1.6;">${input.message}</p>
+              </div>
+            `,
           });
-          console.log("Email sent successfully:", emailResponse);
+          console.log("Email send attempt result:", JSON.stringify(emailResponse, null, 2));
         } catch (emailErr) {
           console.error("Failed to send email via Resend:", emailErr);
         }
